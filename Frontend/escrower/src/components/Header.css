@@ -1,0 +1,47 @@
+.brand-ai {
+  color: #ffffff;
+}
+
+.custom-nav-link {
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+.custom-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #ffffff !important;
+  transform: scale(1.15);
+}
+
+.custom-nav-link:hover::after {
+  width: 100%;
+}
+
+.custom-btn {
+  background: #ffffff !important;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 100px !important;
+  transition: all 0.35s ease;
+
+}
+
+.custom-btn:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+  transform: scale(1.08);
+}
