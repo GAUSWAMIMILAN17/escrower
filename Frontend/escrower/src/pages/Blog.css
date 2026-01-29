@@ -19,8 +19,8 @@
 }
 
 .blog-tag {
-  color: #9dff00;
-  font-size: 13px;
+  color: white;
+  font-size: 23px;
   letter-spacing: 2px;
 }
 
@@ -47,13 +47,15 @@
 .blog-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 25px;
 }
 
 .blog-card {
   background: #1a1a1a;
   border-radius: 26px;
   padding: 40px;
+  height: 300px;
+  width: 700px;
 }
 
 .blog-card h3 {

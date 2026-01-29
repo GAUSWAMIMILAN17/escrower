@@ -6,14 +6,29 @@ import Faq from "./pages/FAQ";
 import Blog from "./pages/Blog";
 import Newsletter from "./pages/Newsletter";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    fetch("http://localhost:5000/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        username: "testuser",
+        email: "testuser@example.com",
+        password: "testpassword"
+      })
+    });
+  }, []);
+
   return (
     <>
       <Header />
       <Home />
       <Features />
-      <Portfolio />
+    
       <Faq />
       <Blog />
       <Newsletter />
@@ -21,5 +36,4 @@ function App() {
     </>
   );
 }
-
 export default App;

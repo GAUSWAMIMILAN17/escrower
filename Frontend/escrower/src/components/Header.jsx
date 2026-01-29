@@ -1,43 +1,32 @@
-import React from "react";
 import "./Header.css";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
-      <div className="container">
+    <nav className="zex-header">
+      <div className="zex-container">
 
-        <a className="navbar-brand fw-bold" href="/">
-          Escrower
-        </a>
+        <div className="zex-logo">zex.ai</div>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#EscrowerNavbar"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <ul className="zex-menu">
 
-        <div className="collapse navbar-collapse" id="EscrowerNavbar">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+          <li className="zex-dropdown">
+            <span className="zex-link active">Home</span>
+            <ul className="zex-dropdown-menu">
+              <li><a href="#">Home One</a></li>
+              <li><a href="#">Home Two</a></li>
+              <li><a href="#">Home Three</a></li>
+            </ul>
+          </li>
 
-            {["Home","About","Services","Pricing","Team","Blog","Contacts"].map((item) => (
-              <li className="nav-item" key={item}>
-                <a className="nav-link custom-nav-link" href="#">
-                  {item}
-                </a>
-              </li>
-            ))}
+          {["About","Services","Pricing","Team","Blog","Contacts"].map((item) => (
+            <li key={item}>
+              <a href="#" className="zex-link">{item}</a>
+            </li>
+          ))}
 
-          </ul>
+        </ul>
 
-          <div className="ms-lg-4">
-            <button className="btn custom-btn px-4">
-              Generate Image
-            </button>
-          </div>
-        </div>
+        <button className="zex-cta">Get Started</button>
 
       </div>
     </nav>

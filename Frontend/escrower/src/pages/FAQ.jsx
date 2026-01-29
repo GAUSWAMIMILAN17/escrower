@@ -28,7 +28,8 @@ export default function Faq() {
       <section className="faq-section">
         <div className="faq-container">
           <span className="faq-tag">FAQ</span>
-          <h2 className="faq-title">AI image generator <br></br>            FAQs    </h2>
+          <h2 className="faq-title">AI image generator <br></br><h2 className="faq-title2">FAQs</h2></h2>
+          
 
           {data.map((item, i) => (
             <div className="faq-item" key={i}>

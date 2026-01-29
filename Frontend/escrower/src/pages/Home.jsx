@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import ImageSlider from "../pages/ImageSlider";
 
 const Home = () => {
   return (
@@ -17,46 +18,33 @@ const Home = () => {
           </p>
 
           <button className="home-btn">Get Started</button>
+
+          <ImageSlider />
         </div>
       </section>
 
       <section className="about-section">
-        
-
         <div className="about-wrapper">
           <div className="about-images">
-            <img
-              src="/images/about-main.jpg"
-              alt=""
-              className="about-img-large"
-            />
+            <img src="/images/h1-about-left-1.jpg" className="about-img-large" />
             <div className="about-img-small">
-              <img src="/images/about-1.jpg" alt="" />
-              <img src="/images/about-2.jpg" alt="" />
+              <img src="/images/h1-about-left-2.jpg" />
+              <img src="/images/h1-about-left-3.jpg" />
             </div>
           </div>
 
           <div className="about-content">
             <span className="about-tag">WELCOME</span>
-
             <h2>
               Easy ways to use <br />
               AI tools, and tools <br />
               to build AI.
             </h2>
-
             <p>
               Dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit, sed quia.
+              voluptas sit aspernatur aut odit aut fugit.
             </p>
-
             <button className="about-btn">More About Us</button>
-          </div>
-        </div>
-        <div className="moving-text-wrapper">
-          <div className="moving-text">
-            ✱ BI IMAGE GENERATE ✱ BI IMAGE GENERATE ✱ BI IMAGE GENERATE ✱
-            BI IMAGE GENERATE ✱ BI IMAGE GENERATE ✱ BI IMAGE GENERATE ✱
           </div>
         </div>
       </section>

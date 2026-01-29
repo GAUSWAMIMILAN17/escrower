@@ -1,47 +1,106 @@
-.brand-ai {
-  color: #ffffff;
+.zex-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 96px;
+  background: transparent;
+  z-index: 999;
 }
 
-.custom-nav-link {
-  color: #ffffff !important;
-  font-size: 16px;
+.zex-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zex-logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #7CFF6B;
+}
+
+.zex-menu {
+  display: flex;
+  gap: 42px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.zex-link {
+  color: #cfcfcf;
+  font-size: 17.5px;
   font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.zex-link:hover,
+.zex-link.active {
+  color: #7CFF6B;
+}
+
+.zex-dropdown {
   position: relative;
+}
+
+.zex-dropdown-menu {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 12px 0;
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.35s ease;
+}
+
+.zex-dropdown:hover .zex-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.zex-dropdown-menu li {
+  list-style: none;
+}
+
+.zex-dropdown-menu a {
+  display: block;
+  padding: 10px 22px;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 15px;
   transition: all 0.3s ease;
 }
 
+.zex-dropdown-menu a:hover {
+  color: #7CFF6B;
+  background: rgba(124, 255, 107, 0.08);
+}
 
-.custom-nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0%;
-  height: 2px;
+.zex-cta {
   background: #ffffff;
-  transition: width 0.3s ease;
-}
-
-.custom-nav-link:hover {
-  color: #ffffff !important;
-  transform: scale(1.15);
-}
-
-.custom-nav-link:hover::after {
-  width: 100%;
-}
-
-.custom-btn {
-  background: #ffffff !important;
-  color: #000000;
+  color: #000;
+  border: none;
+  padding: 15px 38px;
+  border-radius: 32px;
   font-weight: 600;
-  border-radius: 100px !important;
+  font-size: 15.5px;
   transition: all 0.35s ease;
-
 }
 
-.custom-btn:hover {
-  background: #000000 !important;
-  color: #ffffff !important;
-  transform: scale(1.08);
+.zex-cta:hover {
+  background: #000;
+  color: #fff;
+  box-shadow: 0 0 26px rgba(124, 255, 107, 0.6);
 }

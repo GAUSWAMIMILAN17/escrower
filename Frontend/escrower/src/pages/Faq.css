@@ -11,6 +11,7 @@
   width: 100%;
   background: #0b0b0b;
   padding: 120px 0;
+  padding-left: 400px;
 }
 
 .faq-container {
@@ -25,14 +26,22 @@
 
 .faq-tag {
   display: block;
-  color: #9dff00;
-  font-size: 13px;
+  color: white;
+  font-size: 20px;
+  padding-left: 300px;
   letter-spacing: 2px;
 }
 
 .faq-title {
   font-size: 48px;
   margin: 16px 0 60px;
+  padding-left: 100px;
+  color: #fff;
+}
+.faq-title2 {
+  font-size: 48px;
+  margin: 0;
+  padding-left: 180px;
   color: #fff;
 }
 
